@@ -6,8 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 export const metadata: Metadata = {
-  title: "Vibe Base",
-  description: "Foundational Architecture v1.0",
+  title: "Medicare Forensics",
+  description: "Advanced Plan Analysis & Audit Tool",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
