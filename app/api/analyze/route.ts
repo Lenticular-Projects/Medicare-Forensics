@@ -165,10 +165,10 @@ export async function POST(req: Request) {
     const jsonResponse = JSON.parse(text);
     return NextResponse.json(jsonResponse);
 
-  } catch (error) {
+  } catch (error: any) {
     console.error("Analysis Error:", error);
     return NextResponse.json(
-      { error: "Failed to analyze plans. Please check the text input." },
+      { error: error.message || "An unexpected error occurred during analysis." },
       { status: 500 }
     );
   }
