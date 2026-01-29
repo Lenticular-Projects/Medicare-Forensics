@@ -35,4 +35,15 @@ export interface AnalysisResult {
 
   primary_grid: GridRow[];
   forensic_grid: GridRow[];
+
+  // Metadata for UI feedback
+  _meta?: {
+    upgraded?: boolean; // True if we fell back from Flash to Pro
+    model_used?: string;
+  };
 }
+
+export const MODELS = {
+  speed: "gemini-2.0-flash-lite", // Verified Fastest
+  accuracy: "gemini-2.5-pro"
+} as const;

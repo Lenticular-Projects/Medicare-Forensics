@@ -136,8 +136,8 @@ function TooltipRenderer({ value }: { value: any }) {
         <div className="flex flex-col gap-1">
             {value.tooltip_header && (
                 <p className={`font-bold uppercase tracking-wider text-xs border-b border-gray-700 pb-1 mb-1 ${value.tooltip_header.includes("Gap") || value.tooltip_header.includes("Risk") || value.tooltip_header.includes("Standard")
-                        ? "text-red-300"
-                        : "text-green-400"
+                    ? "text-red-300"
+                    : "text-green-400"
                     }`}>
                     {value.tooltip_header}
                 </p>
@@ -188,7 +188,7 @@ function GridRowItem({ row, isPrimary }: { row: GridRow; isPrimary: boolean }) {
                             {row.current.display_value}
                         </span>
                     </TooltipTrigger>
-                    <TooltipContent className="bg-gray-900 text-white p-4 text-sm rounded-md max-w-xs z-50 shadow-xl border border-black">
+                    <TooltipContent className="bg-gray-900 text-white p-4 text-sm rounded-none max-w-xs z-50 shadow-xl border border-black">
                         <TooltipRenderer value={row.current} />
                     </TooltipContent>
                 </Tooltip>
@@ -211,7 +211,7 @@ function GridRowItem({ row, isPrimary }: { row: GridRow; isPrimary: boolean }) {
                             {row.challenger.display_value}
                         </span>
                     </TooltipTrigger>
-                    <TooltipContent className="bg-gray-900 text-white p-4 text-sm rounded-md max-w-xs z-50 shadow-xl border border-black">
+                    <TooltipContent className="bg-gray-900 text-white p-4 text-sm rounded-none max-w-xs z-50 shadow-xl border border-black">
                         <TooltipRenderer value={row.challenger} />
                     </TooltipContent>
                 </Tooltip>
