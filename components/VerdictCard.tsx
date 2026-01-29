@@ -88,7 +88,7 @@ export default function VerdictCard({
                         <h3 className="text-xl md:text-2xl font-bold mb-4 leading-tight">
                             {verdictTitle}
                         </h3>
-                        <p className="font-serif text-lg leading-relaxed max-w-2xl opacity-90">
+                        <p className="font-sans text-lg md:text-xl leading-relaxed max-w-3xl opacity-90 text-gray-900 font-bold">
                             {summary}
                         </p>
                     </div>

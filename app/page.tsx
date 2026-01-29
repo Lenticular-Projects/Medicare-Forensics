@@ -10,7 +10,8 @@ import {
   Information,
   ArrowRight,
   FlashFilled,
-  ModelBuilder
+  ModelBuilder,
+  CheckmarkFilled
 } from "@carbon/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -118,9 +119,6 @@ export default function ForensicDashboard() {
                 placeholder="e.g. Dr. Smith is out of network..."
                 className="w-full h-32 p-4 text-xs lg:text-sm bg-white border border-black rounded-none focus:ring-0 focus:outline-none focus:border-black focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-shadow resize-none"
               />
-              <p className="text-[10px] uppercase text-gray-400">
-                Empty = Flash Mode (Fast). Complex Notes = Deep Mode (Thorough).
-              </p>
             </div>
 
             {error && (
@@ -183,9 +181,6 @@ export default function ForensicDashboard() {
                   <div className="text-xl font-mono font-bold uppercase tracking-widest">
                     {loadingText}
                   </div>
-                  <div className="text-xs text-gray-400 font-mono uppercase tracking-widest">
-                    {loadingMode === 'speed' ? 'Target Time: <10s' : 'Target Time: ~45s'}
-                  </div>
                 </div>
               </motion.div>
             ) : (
@@ -226,9 +221,9 @@ export default function ForensicDashboard() {
                       </h4>
                       <ul className="space-y-3">
                         {result.sales_ammunition.map((point, i) => (
-                          <li key={i} className="flex items-start gap-3 text-lg font-medium">
-                            <span className="w-1.5 h-1.5 bg-black mt-2.5 rounded-none shrink-0" />
-                            {point}
+                          <li key={i} className="flex items-start gap-4 text-base md:text-lg font-bold text-gray-900 leading-relaxed">
+                            <span className="w-2 h-2 bg-black mt-2.5 shrink-0" />
+                            <span>{point}</span>
                           </li>
                         ))}
                       </ul>

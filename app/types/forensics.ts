@@ -44,6 +44,6 @@ export interface AnalysisResult {
 }
 
 export const MODELS = {
-  speed: "gemini-2.0-flash-lite", // Verified Fastest
+  speed: "gemini-2.5-pro", // Reverted to Pro (Accuracy)
   accuracy: "gemini-2.5-pro"
 } as const;

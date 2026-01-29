@@ -92,7 +92,7 @@ export default function ComparisonGrid({
                         </div>
                     </div>
                     <div className="p-4 flex flex-col justify-center">
-                        <span className="text-gray-500 text-xs uppercase mb-1">Challenger</span>
+                        <span className="text-gray-500 text-xs uppercase mb-1">The New Plan</span>
                         <div className="font-bold text-lg md:text-xl uppercase tracking-tight leading-none">
                             {headers?.challenger_name || "New Plan"}
                         </div>
@@ -197,7 +197,7 @@ function GridRowItem({ row, isPrimary }: { row: GridRow; isPrimary: boolean }) {
             {/* Challenger Value */}
             <div className={`p-3 md:p-4 relative transition-colors ${row.winner === "CHALLENGER" ? "bg-green-100 font-bold" : "bg-red-50"}`}>
                 <div className="flex justify-between items-center md:hidden mb-1">
-                    <span className="text-xs text-gray-500 uppercase">Challenger</span>
+                    <span className="text-xs text-gray-500 uppercase">The New Plan</span>
                     {row.winner === "CHALLENGER" && <CheckmarkFilled className="text-green-700 w-4 h-4" />}
                 </div>
                 {row.winner === "CHALLENGER" && (
