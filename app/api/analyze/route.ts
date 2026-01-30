@@ -42,8 +42,10 @@ For every single data point, you must extract:
 1. "display_value": The headline number(e.g. "$4,000/yr").
 2. "tooltip_header": A short, punchy 2 - 4 word summary. 
    - Good: "Comprehensive Coverage", "Coverage Gaps Detected", "Unicorn Benefit", "Standard Benefit".
-3. "tooltip_bullets": An array of strings with specific details.Use ** Bold ** for keys.
-   - Example: ["**Preventive:** $0 Copay", "**Implants:** Not Covered"]
+3. "tooltip_bullets": An array of 3-5 strings with specific details. Use **Bold** for keys.
+   - CRITICAL: NO FILLER WORDS. Strict "Key: Value" format.
+   - Bad: "You get good dental coverage with a high limit."
+   - Good: ["**Annual Max:** $2,000", "**Preventive:** 100% Covered", "**Implants:** Not Covered", "**Network:** PPO"]
 
     - ** Dental:** Detail Network, Preventive vs Comprehensive, Implants.
    - ** OTC:** Detail Food / Utilities / Rent, Rollover rules.

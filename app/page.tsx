@@ -94,7 +94,7 @@ export default function ForensicDashboard() {
             </p>
           </div>
 
-          <div className="flex-1 space-y-6">
+          <div className="space-y-6">
             <div className="space-y-2">
               <label className="text-xs font-bold uppercase tracking-wider flex items-center gap-2">
                 <DocumentImport className="w-4 h-4" />
@@ -104,7 +104,7 @@ export default function ForensicDashboard() {
                 value={rawInput}
                 onChange={(e) => setRawInput(e.target.value)}
                 placeholder="PASTE 3-COLUMN DATA HERE..."
-                className="w-full h-64 p-4 text-xs lg:text-sm bg-white border border-black rounded-none focus:ring-0 focus:outline-none focus:border-black focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-shadow resize-none"
+                className="w-full h-64 p-4 text-xs lg:text-sm bg-white border border-black rounded-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] focus:ring-0 focus:outline-none focus:border-black focus:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all resize-none"
               />
             </div>
 
@@ -117,7 +117,7 @@ export default function ForensicDashboard() {
                 value={clientNotes}
                 onChange={(e) => setClientNotes(e.target.value)}
                 placeholder="e.g. Dr. Smith is out of network..."
-                className="w-full h-32 p-4 text-xs lg:text-sm bg-white border border-black rounded-none focus:ring-0 focus:outline-none focus:border-black focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-shadow resize-none"
+                className="w-full h-32 p-4 text-xs lg:text-sm bg-white border border-black rounded-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] focus:ring-0 focus:outline-none focus:border-black focus:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all resize-none"
               />
             </div>
 
